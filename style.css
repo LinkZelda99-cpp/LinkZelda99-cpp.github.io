@@ -1,62 +1,358 @@
-/*header {*/
-/*    border-bottom: 2px solid white;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    gap: 15px;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-header img {
-    width: 100px;
-    height: 100px;
-}
+/* ===== General Page Styles ===== */
+
 body {
+    margin: 0;
+    background-color: #0F1218;
     font-family: Arial, sans-serif;
-    background-color: #0D1117;
-    margin: 20px;
 }
 
 h1 {
+    margin: 30px;
     color: #A5B4C3;
     font-size: 32px;
 }
 
 h2 {
-    color: #8B949E;
-    padding: 10px 20px 30px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    border-bottom: 2px solid white;
+    margin-top: 20px;
+    padding: 30px 10px 10px;
+    color: #E6EDF3;
 }
 
 h3 {
-    color: #8B949E;
+    margin-left: 20px;
+    color: #A5B4C3;
 }
+
 p {
+    margin: 0 0 20px;
     color: #E6EDF3;
     font-size: 16px;
+    line-height: 1.75;
 }
 
 a {
     color: #58A6FF;
 }
 
+
+/* ===== Header ===== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+}
+
+#site-logo img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+/* ===== Homepage Hero ===== */
+
+#hero {
+    display: flex;
+    align-items: flex-end;
+    min-height: 75vh;
+    padding: 60px;
+    box-sizing: border-box;
+    background-image:
+            linear-gradient(
+                    to top,
+                    rgba(13, 17, 23, 0.95),
+                    rgba(13, 17, 23, 0.05)
+            ),
+            url("./images/mountains.JPEG");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-subtitle {
+    color: #A5B4C3;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+#hero h1 {
+    margin: 10px 0;
+    color: #F1F5FC;
+    font-size: clamp(40px, 6vw, 80px);
+}
+
+#hero .hero-content > p:last-child {
+    color: #E6EDF3;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ===== About Section ===== */
+
+#about {
+    display: grid;
+    grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.2fr);
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 72px 60px;
+}
+
+.about-heading h2 {
+    margin: 12px 0 0;
+    padding: 0;
+    color: #E6EDF3;
+    font-size: clamp(28px, 3vw, 40px);
+}
+
+.about-copy p {
+    max-width: 650px;
+    letter-spacing: 0.0125em;
+}
+
+.about-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ===== Projects Section ===== */
+
+#projects {
+    padding: 0 20px 20px;
+    background-color: #0F1218;
+}
+
+.project-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 4px;
+    scrollbar-width: thin;
+    scrollbar-color: #30363D transparent;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 12px;
+    transition: border-color 0.25s ease;
+}
+
+.project-card:hover {
+    border-color: #4D7CFE;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #A5B4C3;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.project-track::-webkit-scrollbar {
+    height: 6px;
+}
+
+.project-track::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-track::-webkit-scrollbar-thumb {
+    background-color: #30363D;
+    border-radius: 999px;
+}
+
+.project-track::-webkit-scrollbar-thumb:hover {
+    background-color: #58A6FF;
+}
+
+
+/* ===== Skills Section ===== */
+
+#skills {
+    padding-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* ===== Footer ===== */
+
+.site-footer {
+    padding: 24px 40px 16px;
+    background-color: #0F1218;
+    border-top: 1px solid #293750;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#footer-logo img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.footer-identity p {
+    margin: 0;
+}
+
+.footer-name {
+    color: #E6EDF3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-tagline {
+    margin-top: 5px !important;
+    color: #A5B4C3;
+    font-size: 14px;
+}
+
+.footer-nav,
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-nav a,
+.footer-social a {
+    color: #A5B4C3;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+    color: #4D7CFE;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    padding-top: 14px;
+    border-top: 1px solid #293750;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #8B949E;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* ===== Mobile Layout ===== */
+
 @media (max-width: 600px) {
     header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    #hero {
+        min-height: 65vh;
+        padding: 30px 20px;
+    }
+
+    #hero h1 {
+        overflow-wrap: anywhere;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 48px 20px;
+    }
+
+    .project-card {
+        flex-basis: 280px;
+    }
+}
+
+
+/* ===== Footer Mobile Layout ===== */
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 30px 20px 20px;
+    }
+
+    .footer-main {
+        align-items: flex-start;
         flex-direction: column;
-        align-items: center;
-        +.3-
+        gap: 24px;
+    }
+
+    .footer-nav,
+    .footer-social {
+        gap: 14px 18px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
     }
 }

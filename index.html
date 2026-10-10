@@ -1,146 +1,225 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./images/logo.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The personal website of Austin McDonald.">
-    <title>Austin McDonald</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal website of Austin McDonald.">
+  <title>Austin McDonald</title>
+  <link rel="icon" href="./images/logo.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
 <header>
-    <div id="header-left">
-        <div id="logo">
-            <img src="./images/logo.png" alt="Austin McDonald logo">
-            <div id="logo-text">
-                <h1>Austin McDonald</h1>
-                <p>Computer Programmer &amp; Game Developer</p>
-            </div>
-        </div>
-    </div>
+  <a href="./index.html" id="site-logo" aria-label="Austin McDonald — Home">
+    <img src="./images/logo.png" alt="">
+  </a>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills &amp; Technologies</a>
-    </nav>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills &amp; Technologies</a>
+  </nav>
 </header>
-<!--<header>-->
-<!--    <div id="logo">-->
-<!--        <div id="logo-image">-->
-<!--            <img src="./images/logo.png" alt="Austin McDonald logo">-->
-<!--        </div>-->
-<!--        <div id="logo-text">-->
-<!--            <h1>Austin McDonald</h1>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <p>Computer Programmer &amp; Game Developer</p>-->
-<!--    <nav>-->
-<!--        <a href="#about">About Me</a>-->
-<!--        <a href="#projects">Projects</a>-->
-<!--        <a href="#skills">Skills &amp; Technologies</a>-->
-<!--    </nav>-->
-<!--</header>-->
 
 <main>
-    <section id="about">
-        <h2>About Me</h2>
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <p class="hero-subtitle">PROGRAMMER &amp; GAME DEVELOPER</p>
+      <h1 id="hero-title">Austin McDonald</h1>
+      <p>Building software, creating worlds, and bringing ideas to life.</p>
+    </div>
+  </section>
+
+
+  <section id="about" aria-labelledby="about-title">
+    <div class="about-heading">
+      <h2 id="about-title">About Me</h2>
+    </div>
+
+    <div class="about-copy">
+      <p>
+        Hi! I'm Austin McDonald, a programmer and game developer.
+        I'm currently the lead designer and programmer of SOLUNE and Echoes of Shadows.
+      </p>
+
+      <p>
+        I enjoy creating games, writing code, composing music,
+        and working on random projects just for the fun of it.
+      </p>
+
+      <p>
+        This website is also my way of learning web development,
+        so it's probably going to change quite a bit over time.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-track">
+      <article class="project-card" id="solune">
+        <h3>SOLUNE</h3>
+
+        <img
+            src="./images/solune-icon-100-trans-bg.png"
+            alt="The icon for the video game SOLUNE, a half sun and half moon."
+            width="100"
+            height="100"
+        >
 
         <p>
-            Hi! I'm Austin McDonald, a programmer and game developer.
-            I'm currently the lead designer and programmer of SOLUNE and Echoes of Shadows.
+          A story-driven RPG focused on exploration, choices, and consequences.
         </p>
 
         <p>
-            I enjoy creating games, writing code, composing music,
-            and working on random projects just for the fun of it.
+          I am the lead designer and programmer of the project.
         </p>
 
         <p>
-            This website is also my way of learning web development,
-            so it's probably going to change quite a bit over time.
+          <a
+              href="https://gamejolt.com/games/SOLUNE/990404"
+              target="_blank"
+              rel="noopener"
+          >
+            SOLUNE page on GameJolt
+          </a>
         </p>
-    </section>
+      </article>
 
-    <section id="projects">
-        <h2>Projects</h2>
+      <article class="project-card" id="echoes-of-shadows">
+        <h3>Echoes of Shadows</h3>
 
-        <article>
-            <h3>SOLUNE</h3>
+        <img
+            src="./images/echoes-of-shadows.png"
+            alt="A minimalist black-and-white terminal symbol representing Echoes of Shadows."
+            width="100"
+            height="100"
+        >
 
-            <p>
-                A story-driven RPG focused on exploration, choices, and consequences.
-            </p>
+        <p>
+          A C++ RPG focused on exploration, adventure, and discovery.
+        </p>
 
-            <p>
-                I am the lead designer and programmer of the project.
-            </p>
+        <p>
+          I am the sole developer of the project.
+        </p>
 
-            <img
-                src="./images/solune-icon-100-trans-bg.png"
-                alt="The icon for the video game SOLUNE, which is a half sun, half moon with a transparent background."
-                width="100"
-                height="100"
-            >
+        <p>
+          <a
+              href="https://github.com/LinkZelda99-cpp/Echoes-of-Shadows"
+              target="_blank"
+              rel="noopener"
+          >
+            Echoes of Shadows on GitHub
+          </a>
+        </p>
+      </article>
 
-            <p>
-                <a
-                    href="https://gamejolt.com/games/SOLUNE/990404"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    SOLUNE page on GameJolt
-                </a>
-            </p>
-        </article>
+      <article class="project-card" id="notion-sidebar">
+        <h3>Notion Sidebar</h3>
 
-        <article>
-            <h3>Echoes of Shadows</h3>
+        <img
+            src="./images/notion-sidebar.png"
+            alt="Notion logo combined with a sidebar symbol."
+            width="100"
+            height="100"
+        >
 
-            <p>
-                A C++ RPG focused on exploration, adventure, and discovery.
-            </p>
+        <p>
+          A VS Code extension that brings your Notion workspace directly
+          into your editor, letting you search, read, navigate, and edit
+          Notion pages without switching to your browser.
+        </p>
 
-            <p>
-                I am the sole developer of the project.
-            </p>
-            <p>
-                <a href="https://github.com/LinkZelda99-cpp/Echoes-of-Shadows" target="_blank" rel="noopener">
-                    Echoes of Shadows on GitHub
-                </a>
-            </p>
-        </article>
-    </section>
+        <p>
+          I am the sole developer of the project.
+        </p>
 
-    <section id="skills">
-        <h2>Skills &amp; Technologies</h2>
+        <p>
+          <a
+              href="https://marketplace.visualstudio.com/items?itemName=LinkZelda99-cpp.notion-sidebar"
+              target="_blank"
+              rel="noopener"
+          >
+            Notion Sidebar on the Visual Studio Code Marketplace
+          </a>
+        </p>
+      </article>
+    </div>
+  </section>
 
+  <section id="skills">
+    <h2>Skills &amp; Technologies</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
         <h3>Programming</h3>
-        <p>
-            Python, C++, and HTML, with more languages to come.
-        </p>
+        <p>Python, C++, and HTML, with more languages to come.</p>
+      </div>
 
+      <div class="skill-group">
         <h3>Game Development</h3>
-        <p>
-            Game programming, game design, storytelling, and music composition.
-        </p>
+        <p>Game programming, game design, storytelling, and music composition.</p>
+      </div>
 
+      <div class="skill-group">
         <h3>Tools</h3>
-        <p>
-            GitHub, Git, WebStorm, Visual Studio, VS Code, Blender, and more.
-        </p>
-    </section>
-    <section id = "Links">
-        <h2>Links</h2>
-        <p>
-            <a href="https://linktr.ee/LinkZelda99" target="_blank" rel="noopener">Linktree</a>
-        </p>
-        <p>
-            <a href="https://github.com/LinkZelda99-cpp" target="_blank" rel="noopener">GitHub</a>
-        </p>
-    </section>
+        <p>GitHub, Git, WebStorm, Visual Studio, VS Code, Blender, and more.</p>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="./index.html" id="footer-logo" aria-label="Austin McDonald — Home">
+        <img src="./images/logo.png" alt="">
+      </a>
+
+      <div class="footer-identity">
+        <p class="footer-name">Austin McDonald</p>
+        <p class="footer-tagline">Programmer &amp; Game Developer</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills &amp; Technologies</a>
+    </nav>
+
+    <div class="footer-social">
+      <a
+          href="https://github.com/LinkZelda99-cpp"
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+          href="https://linktr.ee/LinkZelda99"
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+        Linktree
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-photo-credit">
+      Mountain photograph: &copy; 2022 Mark Durant Photography
+    </p>
+
+    <p class="footer-copyright">
+      &copy; 2026 Austin McDonald
+    </p>
+  </div>
+</footer>
 </body>
 </html>
