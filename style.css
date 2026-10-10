@@ -208,6 +208,11 @@ nav a {
 
 #skills {
     padding-bottom: 30px;
+    margin-left: 20px;
+}
+
+#skills p {
+    margin-left: 20px;
 }
 
 .skills-grid {
