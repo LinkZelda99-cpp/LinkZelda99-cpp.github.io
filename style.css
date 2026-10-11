@@ -332,6 +332,20 @@ nav a {
         padding: 48px 20px;
     }
 
+    #skills {
+        margin: 0 20px;
+    }
+
+    #skills .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #skills h3,
+    #skills p {
+        margin-left: 0;
+    }
+
     .project-card {
         flex-basis: 280px;
     }
