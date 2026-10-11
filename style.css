@@ -221,6 +221,32 @@ nav a {
     gap: 24px;
 }
 
+/* ===== Contact Section ===== */
+
+#contact {
+    padding: 10px 20px;
+    background-color: #0F1218;
+}
+
+.contact-heading {
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    text-align: left;
+}
+
+.contact-content > p:first-child {
+    color: #E6EDF3;
+}
+
+.contact-email-address {
+    color: #A5B4C3;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
 
 /* ===== Footer ===== */
 
