@@ -112,7 +112,8 @@ nav a {
     grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.2fr);
     gap: 48px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: auto;
     padding: 72px 60px;
 }
 
