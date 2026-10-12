@@ -16,6 +16,7 @@ h2 {
     margin-top: 20px;
     padding: 30px 10px 10px;
     color: #E6EDF3;
+    font-size: 24px;
 }
 
 h3 {
@@ -251,7 +252,7 @@ nav a {
 /* ===== Footer ===== */
 
 .site-footer {
-    padding: 24px 40px 16px;
+    padding: 24px 10px 16px;
     background-color: #0F1218;
     border-top: 1px solid #293750;
 }
