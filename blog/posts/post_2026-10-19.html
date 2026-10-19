@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="description" content="A look at the progress of the SOLUNE battle demo, from its battle system and Gorach encounter to the work still ahead.">
+  <title>SOLUNE Battle Demo: Building a Battle System With Its Own Identity | Austin McDonald</title>
+  <link rel="canonical" href="https://austinmcdonald.dev/blog/posts/post_2026-10-19.html">
+  <meta property="og:title" content="SOLUNE Battle Demo: Building a Battle System With Its Own Identity">
+  <meta property="og:description" content="Progress on the SOLUNE battle demo, Gorach's fight, and making the battle system feel like its own thing.">
+  <meta property="og:url" content="https://austinmcdonald.dev/blog/posts/post_2026-10-19.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://austinmcdonald.dev/images/mountains.JPEG">
+  <meta property="article:published_time" content="2026-10-19">
+  <meta property="article:author" content="Austin McDonald">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SOLUNE Battle Demo: Building a Battle System With Its Own Identity">
+  <meta name="twitter:description" content="Progress on the SOLUNE battle demo, Gorach's fight, and making the battle system feel like its own thing.">
+  <meta name="twitter:image" content="https://austinmcdonald.dev/images/mountains.JPEG">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="posts.css">
+</head>
+<body>
+<header>
+  <a href="../" id="site-logo" aria-label="Austin McDonald — Home">
+    <img src="../../images/logo.png" alt="">
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="../index.html">Home</a>
+  </nav>
+</header>
+<main>
+  <article class="blog-post">
+    <header class="post-header">
+      <h1>SOLUNE Battle Demo: Building a Battle System With Its Own Identity</h1>
+      <p class="post-meta">Published <time datetime="2026-10-19">October 19, 2026</time></p>
+    </header>
+    <div class="post-content">
+      <p>The SOLUNE battle demo has been getting a lot of work put into it lately. The goal is to build a battle system that feels like SOLUNE, not just Undertale with different characters and sprites.</p>
+
+      <section>
+        <h2>The Battle System</h2>
+        <p>The battle system has six main actions: STRIKE, RESONATE, GUARD, PURIFY, FOCUS, and RESTORE. Each one has its own purpose, and I want the player to have more to think about than just attacking every turn.</p>
+        <p>The UI has also been getting polished, with better command descriptions, HP and CL displays, and a more cohesive visual style. There's still work to do, but the foundation is there.</p>
+      </section>
+
+      <section>
+        <h2>Gorach</h2>
+        <p>Gorach is the main enemy in the current demo, and he's actually one of the oldest SOLUNE characters. He was created just days after the original idea for SOLUNE, so getting his battle right is pretty important to me.</p>
+        <p>One of the things I'm working on is his CL-based appearance. As his CL changes, his appearance is supposed to change with it. His fight also has planned phases called Rage, Recognition, Memory, and Hope.</p>
+        <p>I want Gorach to feel like his own character, not just another boss with a bunch of attacks. He's a monster of few words, so his behavior and the way the fight develops need to do a lot of the storytelling.</p>
+      </section>
+
+      <section>
+        <h2>Making SOLUNE Different</h2>
+        <p>One of my biggest concerns is making sure SOLUNE's battles actually have their own identity. I don't want to just change the names of things and call it original.</p>
+        <p>The biggest thing I think we need to focus on is making the enemy attacks themselves feel distinct. Not just changing projectile shapes or making different patterns, but giving enemies unique ways of attacking that reflect their personalities and make encounters feel different from one another.</p>
+        <p>That's something I want to keep in mind as the battle system develops. The mechanics should help tell the story, not just exist because it's a battle system.</p>
+      </section>
+
+      <section>
+        <h2>Current Issues</h2>
+        <p>Unfortunately, the demo still has a pretty major bug. After the battle ends, it can get stuck showing an empty dialogue box. Pressing confirm doesn't do anything, so the game effectively softlocks before the ending screen can appear.</p>
+        <p>I've fixed a separate GameMaker project-file parsing error, but that didn't fix this issue. The exact cause of the softlock still needs to be found, and I don't want to call it fixed until the ending actually works in-game.</p>
+      </section>
+
+      <section>
+        <h2>What's Next?</h2>
+        <p>The immediate priority is fixing the post-battle softlock and making sure the demo can reach its ending properly. After that, there's still plenty to work on with Gorach's fight, the CL-based visuals, and making the overall battle experience feel more unique.</p>
+        <p>There's a lot left to do, but I'm happy with the direction SOLUNE is going. I want this project to become something that stands on its own, and the battle system is a huge part of that.</p>
+      </section>
+    </div>
+    <footer class="post-footer">
+      <a href="../index.html">← Back to the blog</a>
+    </footer>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="../../" id="footer-logo" aria-label="Austin McDonald — Home">
+        <img src="../../images/logo.png" alt="">
+      </a>
+      <div class="footer-identity">
+        <p class="footer-name">Austin McDonald</p>
+        <p class="footer-tagline">Programmer &amp; Game Developer</p>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#projects">Projects</a>
+      <a href="../../index.html#skills">Skills &amp; Technologies</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://github.com/LinkZelda99-cpp" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linktr.ee/LinkZelda99" target="_blank" rel="noopener noreferrer">Linktree</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copyright">&copy; 2026 Austin McDonald</p>
+  </div>
+</footer>
+</body>
+</html>
