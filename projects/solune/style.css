@@ -7,6 +7,20 @@
     margin-bottom: 20px;
 }
 
+/* Keep the project hero simple; remove any leftover decorative grid layers. */
+#project-hero {
+    background: none !important;
+    background-image: none !important;
+}
+
+#project-hero::before,
+#project-hero::after {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    background-image: none !important;
+}
+
 p {
     margin-left: 20px;
 }
